@@ -17,20 +17,32 @@
   --primaryGradient2: #e040fb;
   --backgroundDark: #181c25;
   --backgroundDarker: #14171f;
+  --Chat-Font-Used: "Fira Code", normal;
+  --Chat-Font-Size: 16px;
 }
+
+/* 
+  Global Font
+*/
+:not([class="hljs"]):not(code) {
+  font-family: var(--Chat-Font-Used) !important;
+}
+
+.markup:not(code) {
+  font-size: var(--Chat-Font-Size) !important;
+}
+
 /*
 Nebula + Custom Styles
 */
 
-.da-speaking {
+.da-speaking,
+.en-speaking {
   box-shadow: inset 0 0 0 2px var(--primaryGradient2) !important;
 }
 
-.da-listItem:hover {
-  //box-shadow: 0 0 3pt 2pt var(--primaryGradient2);
-}
-
-.da-numberBadge {
+.da-numberBadge,
+.en-numberBadge {
   background: linear-gradient(
     90deg,
     rgba(103, 58, 183, 1) 0%,
@@ -40,27 +52,20 @@ Nebula + Custom Styles
 }
 
 .da-videoGrid,
-.da-scrollerInner {
+.da-scrollerInner,
+.en-videoGrid,
+.en-scrollerInner {
   background-color: var(--backgroundDarker) !important;
 }
 
 .da-scroller,
-.da-unreadMentionsIndicatorBottom {
+.en-scroller,
+.da-unreadMentionsIndicatorBottom,
+.en-unreadMentionsIndicatorBottom {
   background-color: var(--backgroundDark);
 }
 
-.da-list {
+.da-list,
+.en-list {
   margin-top: 4px;
-}
-
-:root {
-  --Chat-Font-Used: "Fira Code", normal;
-  --Chat-Font-Size: 16px;
-}
-:not([class="hljs"]):not(code) {
-  font-family: var(--Chat-Font-Used) !important;
-}
-
-.markup:not(code) {
-  font-size: var(--Chat-Font-Size) !important;
 }
