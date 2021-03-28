@@ -1,4 +1,4 @@
-//META{"name":"magerlin","description":"Magerlin Dark Horizon Theme. Based on the Nocturnal theme from Discord Theme Generator","author":"Spectra","version":"Auto Update"}*//
+//META{"name":"magerlin_dark_horizon","description":"Magerlin Dark Horizon Theme. Based on the Nocturnal theme from Discord Theme Generator","author":"Magerlin","version":"1.0"}*//
 @import url("https://codedotspectra.github.io/themes/nocturnal/importCSS/core.css");
 @import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
 @import url("https://codedotspectra.github.io/themes/core/badges.css");
@@ -7,7 +7,6 @@
 /*
  Horizontal Server Listing
 */
-
 @import url("https://discordstyles.github.io/HorizontalServerList/base.css");
 
 :root {
@@ -33,7 +32,7 @@
 }
 
 /*
-Nebula + Custom Styles
+  Custom Styles
 */
 
 .da-speaking,
@@ -45,8 +44,8 @@ Nebula + Custom Styles
 .en-numberBadge {
   background: linear-gradient(
     90deg,
-    rgba(103, 58, 183, 1) 0%,
-    rgba(224, 64, 251, 1) 100%
+    var(--primary) 0%,
+    var(--primaryGradient2) 100%
   );
   font-weight: normal;
 }
